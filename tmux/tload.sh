@@ -2,7 +2,7 @@
 #
 
 tload () { 
-    local BASEPATH=$DXCONFIGPATH/tmux/buffers/
+    local BASEPATH=$DXCONFIG/tmux/buffers/
     [ $# -eq 0 ] && FROM=$BASEPATH/$(hostname).$(date +'%Y%m%d') || FROM=$1
     if [ ! -d $FROM ]; then
         echo "Cannot find $FROM"
