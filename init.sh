@@ -9,3 +9,4 @@ mkdir -p $SCRIPTPATH/tmux/buffers
 mkdir -p $SCRIPTPATH/tmux/capture-pane
 [ ! -r ~/.tmux.conf ] && ln -sf $SCRIPTPATH/tmux/tmux.conf ~/.tmux.conf
 [ ! -r ~/.vifm ] && ln -sf $SCRIPTPATH/vifm ~/.vifm
+[ ! -r ~/.vimrc ] && ln -sf $SCRIPTPATH/vimrc ~/.vimrc
