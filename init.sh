@@ -7,3 +7,5 @@ X=$(echo $SCRIPTPATH | sed 's|/|\\/|g')
 sed -i "s/<<replaceme>>/$X/" $SCRIPTPATH/env.rc $SCRIPTPATH/tmux/tmux.conf
 mkdir -p $SCRIPTPATH/tmux/buffers
 mkdir -p $SCRIPTPATH/tmux/capture-pane
+ln -sf $SCRIPTPATH/tmux/tmux.conf ~/.tmux.conf
+ln -sf $SCRIPTPATH/vifm ~/.vifm
